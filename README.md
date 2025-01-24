@@ -1,5 +1,5 @@
 # SolarBeam
-SolarBeam is an open-source multi-channel interface and amplifier for vibrotactile haptics. //
+SolarBeam is an open-source multi-channel interface and amplifier for vibrotactile haptics. \n
 Demo video: \\
 How to make a SolarBeam:
 Academic paper:
