@@ -1,8 +1,8 @@
 # SolarBeam
 SolarBeam is an open-source multi-channel interface and amplifier for vibrotactile haptics. It consists of a Teensy 4.0 microcontroller, a custom PCB, a few components to be soldered on afterwards, and a wooden enclosure.\
-*Demo video:* (Coming Soon)\
-*Academic paper:* (Coming Soon)\
-*Really interested in using a SolarBeam but can't make one yourself?* Contact lloyd [at] ccrma [dot] stanford [dot] edu with the subject line "SolarBeam" and we'll try our best to get you one.
+**Demo video:** (Coming Soon)\
+**Academic paper:** (Coming Soon)\
+**Really interested in using a SolarBeam but can't make one yourself?** Contact lloyd [at] ccrma [dot] stanford [dot] edu with the subject line "SolarBeam" and we'll try our best to get you one.
 
 
 ## Setup
