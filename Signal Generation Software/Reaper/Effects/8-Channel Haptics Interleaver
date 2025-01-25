@@ -1,0 +1,41 @@
+desc: 8-Channel Haptics Interleaver
+author: Lloyd May
+version: 0.1
+
+// Define 8 input pins for channels
+in_pin:Input 1
+in_pin:Input 2
+in_pin:Input 3
+in_pin:Input 4
+in_pin:Input 5
+in_pin:Input 6
+in_pin:Input 7
+in_pin:Input 8
+
+// Define a single output pin
+out_pin:InterleavedOutput
+out_pin:Clock
+
+@init
+channels = 8; // Number of input channels
+interleave_index = 0; // Current index for output sample
+
+@sample
+// Fetch input samples for all 8 channels
+input_samples[0] = spl0; // Channel 1
+input_samples[1] = spl1; // Channel 2
+input_samples[2] = spl2; // Channel 3
+input_samples[3] = spl3; // Channel 4
+input_samples[4] = spl4; // Channel 5
+input_samples[5] = spl5; // Channel 6
+input_samples[6] = spl6; // Channel 7
+input_samples[7] = spl7; // Channel 8
+
+// Output the current sample from the current channel
+spl0 = input_samples[interleave_index];
+
+// Output "1" on the second channel when interleave_index == 0, otherwise output "0"
+spl1 = (interleave_index == 0) ? 1 : 0;
+
+// Update the interleave index to cycle through channels
+interleave_index = (interleave_index + 1) % channels;
