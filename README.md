@@ -7,7 +7,7 @@ SolarBeam is an open-source multi-channel interface and amplifier for vibrotacti
 
 ## Setup
 Once you have a SolarBeam in hand, you'll need to flash it (i.e. upload the software in the "SolarBeam Firmware" folder to the Teensy of the SolarBeam PCB.)
-Connect the Teensy to a computer with Arduino through USB and supply power to the device via plugging in a 9V power supply. With the software open, make sure the Teensy is identified through label or active USB port usage. Additionally, set the audio output device for your computer's system as the Teensy.
+Connect the Teensy to a computer with Arduino through USB and supply power to the device via plugging in a 9V power supply (Truetone ONESPOT 9V power supply or other well-filtered power supply strongly recommended). With the software open, make sure the Teensy is identified through label or active USB port usage. Additionally, set the audio output device for your computer's system as the Teensy.
 
 Download the latest BrainBox version and open the latest BrainBox.ino file in Arduino. Upload the file onto the board, which when complete, will automatically run. For any issues that arise during the run a re-upload should fix them.
 
